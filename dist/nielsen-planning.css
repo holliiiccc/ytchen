@@ -4,17 +4,17 @@ body.nielsen-case { font-size: 16px; line-height: 1.6; }
 .nielsen-case h3,
 .nielsen-case .outcome-list dt { font-size: 24px; }
 .nielsen-case .hero-intro p { font-size: 20px; }
-.nielsen-case .site-header,
-.nielsen-case .nav-inner,
-.nielsen-case .button,
-.nielsen-case .supporting-evidence > summary,
-.nielsen-case .dialog-close { font-size: 28px; min-width:44px; min-height:44px; padding:0; border:0; background:transparent; color:#BAB86C; }
-.nielsen-case .dialog-close:hover { color:#DEDD84; background:transparent; }
-.nielsen-case .dialog-close:active { color:#7C7B48; background:transparent; }
-.nielsen-case .site-header nav,
-.nielsen-case .nav-inner,
-.nielsen-case .button,
-.nielsen-case .supporting-evidence > summary { font-weight: 600; }
+.nielsen-case .site-header { font-size: 16px; }
+.nielsen-case .site-header .identity img { width: 64px; height: 64px; }
+.nielsen-case .site-header nav a { font-size: 16px; font-weight: 400; color: #BAB86C; }
+.nielsen-case .site-header nav a:hover { color: #DEDD84; background: transparent; border-color: transparent; }
+.nielsen-case .site-header nav a:active,
+.nielsen-case .site-header nav a[aria-current="page"] { color: #7C7B48; }
+.nielsen-case .site-footer { text-align: center; }
+.nielsen-case .site-footer .button--secondary { font-size: 16px; font-weight: 400; }
+.nielsen-case .dialog-close { color: #BAB86C; }
+.nielsen-case .dialog-close:hover { color: #DEDD84; background: transparent; }
+.nielsen-case .dialog-close:active { color: #7C7B48; background: transparent; }
 .nielsen-case .eyebrow,
 .nielsen-case figcaption,
 .nielsen-case .project-facts dt,
