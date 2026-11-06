@@ -1,0 +1,7 @@
+const dialog=document.querySelector('#image-dialog');let returnFocus;
+document.querySelectorAll('.image-open').forEach(button=>button.addEventListener('click',()=>{returnFocus=button;const img=document.querySelector('#dialog-image');img.src=button.dataset.image;img.alt=button.dataset.caption;document.querySelector('#dialog-caption').textContent=button.dataset.caption;dialog.showModal();document.querySelector('.dialog-close').focus();}));
+document.querySelector('.dialog-close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();}});dialog.addEventListener('close',()=>returnFocus?.focus());
+const links=[...document.querySelectorAll(".section-nav a")];function markSection(){let active=links[0];for(const link of links){if(document.querySelector(link.hash).getBoundingClientRect().top<160)active=link;}links.forEach(link=>{if(link===active)link.setAttribute("aria-current","location");else link.removeAttribute("aria-current");});}addEventListener("scroll",markSection,{passive:true});markSection();
+// Keep multiple recordings from playing over one another.
+const videos=[...document.querySelectorAll('video')];
+videos.forEach(video=>video.addEventListener('play',()=>videos.forEach(other=>{if(other!==video)other.pause();})));

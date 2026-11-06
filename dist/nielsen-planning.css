@@ -1,0 +1,71 @@
+body.nielsen-case { font-size: 16px; line-height: 1.6; }
+.nielsen-case .hero h1 { font-size: clamp(48px, 4.6vw, 64px); }
+.nielsen-case h2 { font-size: 32px; }
+.nielsen-case h3,
+.nielsen-case .outcome-list dt { font-size: 24px; }
+.nielsen-case .hero-intro p { font-size: 20px; }
+.nielsen-case .site-header,
+.nielsen-case .nav-inner,
+.nielsen-case .button,
+.nielsen-case .supporting-evidence > summary,
+.nielsen-case .dialog-close { font-size: 28px; min-width:44px; min-height:44px; padding:0; border:0; background:transparent; color:#BAB86C; }
+.nielsen-case .dialog-close:hover { color:#DEDD84; background:transparent; }
+.nielsen-case .dialog-close:active { color:#7C7B48; background:transparent; }
+.nielsen-case .site-header nav,
+.nielsen-case .nav-inner,
+.nielsen-case .button,
+.nielsen-case .supporting-evidence > summary { font-weight: 600; }
+.nielsen-case .eyebrow,
+.nielsen-case figcaption,
+.nielsen-case .project-facts dt,
+.nielsen-case .copyright { font-size: 14px; }
+.nielsen-case .outcome-list dd,
+.nielsen-case .supporting-evidence > p { font-size: inherit; }
+/* Case-study refinements are isolated from the homepage and SMS preview. */
+.nielsen-case .overview,
+.nielsen-case .chapter,
+.nielsen-case .turning-point,
+.nielsen-case .delivery-band { padding-block: 64px; }
+.nielsen-case .direction-stage { margin-top: 32px; padding: 0; border: 0; background: none; }
+.nielsen-case .direction-stage h3 { margin-top: 0; }
+.nielsen-case .publisher-focus { max-width: none; padding: 20px; background: var(--surface); }
+.nielsen-case .publisher-focus .image-open { aspect-ratio: 2.9; }
+.nielsen-case .turning-line { margin-top: 32px; padding-top: 24px; color: var(--olive-900); font-size: 20px; line-height: 1.5; }
+.nielsen-case .journey-figure { max-width: none; margin-top: 32px; }
+.nielsen-case .journey-preview { padding: 12px; }
+.nielsen-case .workflow-figure { max-width: 440px; }
+.nielsen-case .supporting-evidence { margin-top: 24px; background: var(--surface); }
+.nielsen-case .supporting-evidence > summary { min-height: 48px; padding: 14px 20px; color: var(--olive-800); font-size: 16px; cursor: pointer; }
+.nielsen-case .supporting-evidence > summary:hover { color: var(--olive-900); text-decoration: underline; text-underline-offset: 4px; }
+.nielsen-case .supporting-evidence > summary:focus-visible { outline: var(--focus-ring); outline-offset: 4px; }
+.nielsen-case .supporting-evidence[open] { padding-bottom: 20px; }
+.nielsen-case .supporting-evidence > :not(summary) { margin-inline: 20px; }
+.nielsen-case .supporting-evidence > p { margin-top: 12px; font-size: inherit; }
+.nielsen-case .turning-point .supporting-evidence { background: var(--bg); }
+.nielsen-case .design-decision { margin-top: 40px; }
+.nielsen-case .design-decision > h3 { margin-top: 0; }
+.nielsen-case .reporting-comparison { display: grid; grid-template-columns: 1fr; gap: 32px; margin-top: 24px; }
+.nielsen-case .reporting-comparison > figure { margin-top: 0; }
+.nielsen-case .reporting-comparison > figure:first-child { max-width: 820px; }
+.nielsen-case .growth { border: 0; padding-top: 0; margin-top: 32px; }
+.nielsen-case .public-reference { background: var(--bg); }
+.nielsen-case .public-product { max-width: 440px; }
+.nielsen-case .related-work { color: var(--text-secondary); }
+@media (max-width: 700px) {
+  body.nielsen-case { font-size: 16px; }
+  .nielsen-case .hero h1 { font-size: 36px; }
+  .nielsen-case h2 { font-size: 28px; }
+  .nielsen-case h3,
+  .nielsen-case .outcome-list dt { font-size: 22px; }
+  .nielsen-case .hero-intro p { font-size: 18px; }
+  .nielsen-case .overview,
+  .nielsen-case .chapter,
+  .nielsen-case .turning-point,
+  .nielsen-case .delivery-band { padding-block: 40px; }
+  .nielsen-case .publisher-focus { padding: 12px; }
+  .nielsen-case .turning-line { font-size: 18px; }
+  .nielsen-case .design-decision { margin-top: 32px; }
+  .nielsen-case .journey-preview { padding: 4px; }
+  .nielsen-case .supporting-evidence > summary { padding: 14px; }
+  .nielsen-case .supporting-evidence > :not(summary) { margin-inline: 14px; }
+}

@@ -1,0 +1,49 @@
+.about-page h1,.about-page h2{font-family:Poppins,Lato,sans-serif;font-weight:600}
+.about-page .site-header nav a[aria-current=page]{color:#7C7B48;text-decoration:underline;text-underline-offset:7px}
+.about-hero{display:grid;grid-template-columns:minmax(0,1fr) 200px;align-items:center;gap:112px;padding:96px 0 104px}
+.about-eyebrow{font-size:14px;color:var(--olive-800);margin-bottom:20px}
+.about-page h1{font-size:48px;line-height:1.25;letter-spacing:-1px}
+.about-lead{font-size:18px;line-height:1.7;margin-top:28px}
+.about-page .about-portrait{width:200px;justify-self:end}
+.about-page section>h2{font-size:28px;line-height:1.35;letter-spacing:-.4px;margin-bottom:24px}
+.about-page section>p:not(.about-eyebrow){font-size:16px;line-height:1.8}
+.about-story{padding:0 0 72px}
+.about-sports{padding:48px;border-radius:16px;background:var(--surface);border-top:3px solid var(--olive-300)}
+.sports-list{margin:32px 0 0}
+.sports-list>div{display:grid;grid-template-columns:190px 1fr;gap:24px;padding:20px 0;border-top:1px solid var(--border-strong)}
+.sports-list dt{font-size:18px;font-weight:600;color:var(--olive-800)}
+.sports-list dd{margin:0;font-size:16px;align-self:center}
+.about-curiosity{padding:72px 0}
+.about-connect{padding:16px 0 24px;border-top:0}
+.about-links{display:flex;gap:16px;flex-wrap:wrap;margin-top:24px}
+.about-links a{min-height:44px}
+@media(max-width:700px){.about-hero{grid-template-columns:1fr;gap:32px;padding:56px 0 64px}.about-page h1{font-size:36px}.about-page .about-portrait{width:140px;justify-self:start}.about-page section>h2{font-size:24px}.about-sports{padding:28px 24px}.sports-list>div{grid-template-columns:1fr;gap:8px}.about-story{padding-bottom:48px}.about-curiosity{padding:48px 0}}
+
+.about-hero{grid-template-columns:minmax(0,1fr) 240px;gap:88px}.about-portrait-photo{display:block;width:240px;max-width:100%;height:auto;justify-self:end}
+@media(max-width:700px){.about-hero{grid-template-columns:1fr;gap:32px}.about-portrait-photo{width:200px;justify-self:start}}
+
+.about-experience{padding:0 0 72px}
+.experience-list{margin:0}
+.experience-list>div{display:grid;grid-template-columns:200px minmax(0,1fr);gap:32px;padding:24px 0;border-top:1px solid var(--border)}
+.experience-list dt{font-size:18px;font-weight:600;color:var(--olive-800)}
+.experience-list dd{margin:0;font-size:16px;line-height:1.7}
+.experience-list dd strong{font-weight:600}
+.experience-list dd p{margin-top:8px}
+.about-page .about-story{padding-bottom:48px}
+.about-page .about-curiosity{padding:0 0 48px}
+@media(max-width:700px){.experience-list>div{grid-template-columns:1fr;gap:8px}.about-experience{padding-bottom:48px}}
+
+/* Quiet, compact experience summary. */
+.about-experience{display:grid;grid-template-columns:200px minmax(0,1fr);gap:32px;align-items:start;padding-bottom:64px}
+.about-page .about-experience>h2{font-size:22px;color:var(--text-secondary);margin:0;line-height:1.6}
+.experience-summary{margin:0;padding-left:20px;font-size:16px;line-height:1.7}
+.experience-summary li+li{margin-top:8px}
+.experience-current{font-size:14px;color:var(--text-secondary);margin-left:8px}
+@media(max-width:700px){.about-experience{grid-template-columns:1fr;gap:16px;padding-bottom:48px}}
+
+/* About sections share the Experience label/content alignment. */
+.about-page .about-story,.about-page .about-curiosity,.about-page .about-connect{display:grid;grid-template-columns:200px minmax(0,1fr);gap:32px;align-items:start}
+.about-page .about-story>h2,.about-page .about-curiosity>h2,.about-page .about-connect>h2{font-size:22px;line-height:1.6;color:var(--text-secondary);margin:0;letter-spacing:-.4px}
+.about-section-content{min-width:0;font-size:16px;line-height:1.8}
+.about-connect .about-links{margin-top:0}
+@media(max-width:700px){.about-page .about-story,.about-page .about-curiosity,.about-page .about-connect{grid-template-columns:1fr;gap:16px}}

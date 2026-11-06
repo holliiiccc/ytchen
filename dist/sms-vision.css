@@ -1,0 +1,51 @@
+/* SMS uses Holly Chen’s portfolio layout, tokens and approved typography. */
+.sms-case .hero h1{max-width:100%}.sms-case .sms-hero-media{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:32px;padding:32px;background:var(--olive-50);border-radius:12px}.sms-hero-media .media-slot{margin:0}.sms-hero-media figcaption{display:none}.media-slot{margin-top:24px}.media-slot-inner{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-height:240px;padding:32px;background:var(--surface);border:1px dashed var(--border-strong);border-radius:8px}.turning-point .media-slot-inner,.sms-hero-media .media-slot-inner{background:var(--bg)}.slot-kind{font-size:14px;color:var(--text-secondary);margin-bottom:16px}.slot-title{font-size:22px;line-height:1.3;color:var(--olive-900);font-weight:600}.media-slot-inner p{font-size:14px;line-height:1.5;margin-top:12px;color:var(--text-secondary)}.sms-case .hero-caption{font-size:14px;color:var(--text-secondary);margin-top:12px}.story-list{padding-left:24px;margin-block:24px}.story-list li+li{margin-top:12px}.inbox-layers{list-style:none;counter-reset:layer;padding:0;margin-block:32px}.inbox-layers>li{counter-increment:layer;padding:24px 0;border-top:1px solid var(--border)}.inbox-layers h3{margin-top:0}.inbox-layers h3:before{content:'0' counter(layer) ' / ';color:var(--olive-700);font-size:14px;vertical-align:middle;margin-right:8px}.prototype-link{margin-top:24px}.sms-case p,.sms-case h2{max-width:none}@media(max-width:700px){.sms-case .sms-hero-media{grid-template-columns:1fr;padding:16px;gap:16px}.media-slot-inner{padding:24px;min-height:180px}.slot-title{font-size:20px}}
+
+/* Full-width evidence with native playback controls. */
+.sms-case .sms-hero-media{display:block;padding:0;background:none}
+.sms-hero-media .sms-evidence{margin:0}
+.sms-hero-media .sms-evidence img{max-height:560px;object-fit:contain;background:var(--surface)}
+.sms-hero-media .sms-evidence figcaption{display:block}
+.sms-evidence img,.sms-video video{display:block;width:100%;height:auto;border-radius:8px}
+.sms-video{margin-block:32px}
+
+
+/* Keep long-form chapters calm, with the prototype chapter lightly distinguished. */
+.sms-case .turning-point#trial{background:var(--bg)}
+.sms-case .turning-point#build{background:var(--surface)}
+
+/* Product evidence stays flat and crisp, like the supplied layout reference. */
+.sms-case .sms-evidence img,.sms-case .sms-video video{border-radius:0;box-shadow:none}
+.sms-case .sms-video video{background:transparent}
+
+/* Full-bleed hero canvas: keep each supplied screen at its original proportions. */
+.sms-case .sms-hero-media{width:100vw;margin:36px 0 0 calc(50% - 50vw);padding:clamp(24px,4vw,56px) max(32px,calc((100vw - 1320px)/2));background:#f2f1da}
+.sms-hero-composition{display:grid;grid-template-columns:minmax(0,2.25fr) minmax(250px,0.9fr);align-items:center;gap:clamp(24px,3vw,48px);max-width:1320px;margin-inline:auto}
+.sms-hero-main img,.sms-hero-supporting img{display:block;width:100%;height:auto;object-fit:contain}
+.sms-hero-main{min-width:0}
+.sms-hero-supporting{display:grid;gap:24px;min-width:0}
+.sms-hero-supporting figure{min-width:0}
+.sms-hero-supporting img{max-height:210px;background:#fff}
+.sms-hero-supporting figcaption{margin-top:8px;font-size:14px;color:var(--text-secondary)}
+.sms-case .hero-caption{margin-top:12px}
+@media(max-width:760px){.sms-case .sms-hero-media{margin-top:24px;padding:24px}.sms-hero-composition{grid-template-columns:1fr;gap:20px}.sms-hero-supporting{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.sms-hero-supporting img{max-height:none}.sms-hero-supporting figcaption{font-size:12px}}
+@media(max-width:480px){.sms-hero-supporting{grid-template-columns:1fr}.sms-hero-supporting img{max-height:240px}}
+
+/* Approved hero preview and tighter transitions. */
+.sms-case .sms-hero-media{display:block;background:#f7f6f0;padding:0}
+.sms-hero-preview{width:100%;margin:0}
+.sms-hero-preview img{display:block;width:100%;height:auto;object-fit:contain}
+.sms-case #opportunity{padding-bottom:20px}
+.sms-case #trial.turning-point{padding-top:24px}
+.sms-case .sms-video video{border-radius:10px;box-shadow:0 10px 28px rgb(47 49 40 / 16%)}
+
+/* Keep prototype media crisp, consistent, and comfortably separated. */
+.sms-case #trial .sms-evidence{width:calc(100% + 48px);max-width:none;margin-left:-24px}
+.sms-case .sms-evidence img{border-radius:10px;box-shadow:0 10px 28px rgb(47 49 40 / 16%)}
+.sms-case .sms-video video{border-radius:10px;box-shadow:0 10px 28px rgb(47 49 40 / 16%);overflow:hidden}
+.sms-case #opportunity{padding-bottom:0}
+.sms-case #trial.turning-point{padding-top:20px;padding-bottom:24px}
+.sms-case #build.turning-point{padding-bottom:20px;background:var(--surface)}
+.sms-case #outcome.delivery-band{padding-top:20px}
+.sms-case .sms-hero-supporting figure{background:#f7f6f0}
+@media(max-width:700px){.sms-case #trial .sms-evidence{width:100%;margin-left:0}}
