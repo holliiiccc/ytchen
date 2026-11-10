@@ -77,20 +77,18 @@
 
 /* Distinct shipped status and restrained project-image motion. */
 .portfolio-home .featured-badge.card-status--shipped{background:var(--olive-800);border-color:var(--olive-800);color:#fff}
-.portfolio-home .featured-card-visual>img{transition:transform 280ms cubic-bezier(.2,.75,.25,1);transform-origin:center}
-@media(hover:hover) and (pointer:fine){.portfolio-home .featured-card-visual>img:hover{transform:translateY(-5px) scale(1.025)}}
-@media(prefers-reduced-motion:reduce){.portfolio-home .featured-card-visual>img,.portfolio-home .featured-card-visual>img:hover{transform:none;transition:none}}
+.portfolio-home .featured-card-visual>:is(img,.sms-thumbnail){transition:transform 280ms cubic-bezier(.2,.75,.25,1);transform-origin:center}
+@media(hover:hover) and (pointer:fine){.portfolio-home .featured-card-visual>:is(img,.sms-thumbnail):hover{transform:translateY(-5px) scale(1.025)}}
+@media(prefers-reduced-motion:reduce){.portfolio-home .featured-card-visual>:is(img,.sms-thumbnail),.portfolio-home .featured-card-visual>:is(img,.sms-thumbnail):hover{transform:none;transition:none}}
 
 /* Homepage brand navigation states. */
 .portfolio-home .site-header .identity img{width:64px;height:64px}
 .portfolio-home .site-header nav a{color:#BAB86C;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 12px;border:1px solid transparent;border-radius:4px;text-decoration:none}
 .portfolio-home .site-header nav a:hover{color:#DEDD84;background:transparent;border-color:transparent;text-decoration:none}
 .portfolio-home .site-header nav a:active{color:#7C7B48}
-.portfolio-home .featured-card--sms .featured-card-visual>img{display:block;width:100%;height:auto;border-radius:6px;box-shadow:0 12px 28px rgb(0 0 0 / 18%)}
 
 /* Tighter transition from introduction to work. */
 .portfolio-home .home-main .home-intro{padding-bottom:64px}
 @media(max-width:700px){.portfolio-home .home-main .home-intro{padding-bottom:40px}}
 
-/* Let the approved SMS hero image carry its own background. */
-.portfolio-home .featured-card--sms .featured-card-visual{padding:0;background:transparent;border-radius:0}
+.portfolio-home .sms-thumbnail{display:block;width:100%;height:auto;overflow:visible;filter:drop-shadow(0 6px 10px rgb(0 0 0 / 16%))}
